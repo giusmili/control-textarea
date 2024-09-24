@@ -1,0 +1,38 @@
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100svh;
+    color: #222;
+}
+
+section{
+    max-width: 100rem;
+    margin: 5rem auto;
+}
+
+header h1{
+    line-height: 7rem;
+    text-align: center;
+    font-weight: normal;
+}
+textarea{
+    transition: all .4s ease-in-out;
+    resize: none;
+    height: 30rem;
+}
+textarea:focus{
+    border:0;
+    box-shadow: 0 0 1rem #e60e0e;
+}
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+    background-color: #07010b;
+    border: 0.1rem solid transparent;
+    transition: all .4s ease-in-out;
+}
+.warning {
+    color: #ff0000;
+    display: none;
+}
+footer p{
+    text-align: center;
+}
