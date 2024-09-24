@@ -22,9 +22,9 @@
                 📝
                 Ajoutez un commentaire
             </h2>
-            <form method="post" >
+            <form method="post" oninput="count.value = text.value.length+' Nombre de caractères'">
                 <label for="text"><em>Attention Nombre de caractères maxi: 20</em></label>
-                <textarea name="com" id="text" maxlength="64">Ici le texte...</textarea>
+                <textarea name="com" id="text" maxlength="20">Ici le texte...</textarea>
                 <p>
                     <output name="count" for="text">
                         0 Nombre de caractères
@@ -37,7 +37,7 @@
         <footer>
             <p>&copy; - MIT - 2024</p>
         </footer>
-    <script type="module" src="js/app.js"></script> 
+   <!--  <script type="module" src="js/app.js"></script>  -->
         
 </body>
 </html>       
